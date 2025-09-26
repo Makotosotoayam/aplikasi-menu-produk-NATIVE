@@ -11,6 +11,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+        <li><a href="index.php">Dashboard</a></li>
+        <li><a href="produk.php">Produk</a></li>
+        <li><a href="kategori.php">Kategori</a></li>
+        <li><a href="user.php">User</a></li>
+        <li><a href="logout.php">Logout</a></li>
+    </ul>
+    </div>
+
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0; left: 0;
+        width: 220px;
+        height: 100vh;
+        background-color: #f8f9fa;
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .sidebar h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #007bff;
+    }
+    .sidebar ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .sidebar ul li {
+        margin-bottom: 15px;
+    }
+    .sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+    }
+    .sidebar ul li a:hover {
+        color: #007bff;
+    }
+    </style>
+
     <center><h1>Data Menu Produk</h1></center>
     <center><a href="tambah_produk.php">+ &nbsp; Tambah Produk</a></center>
     <br>
